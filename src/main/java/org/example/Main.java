@@ -14,6 +14,7 @@ public class Main {
         if(Objects.equals(choice, "code")){
             launcher.startCode();
         }
+        scanner.close();
     }
 
 }

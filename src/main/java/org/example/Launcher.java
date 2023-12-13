@@ -10,6 +10,7 @@ public class Launcher {
         String appName = scanner.nextLine();
         Code code = new Code(appName);
         code.openApp();
+        scanner.close();
     }
 
 }
