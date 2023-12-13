@@ -2,6 +2,11 @@ package org.example;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import static java.awt.SystemColor.desktop;
+
 public class Code {
     final private String app;
     public Code(String app){
@@ -37,4 +42,15 @@ public class Code {
             }
         }
     }
+    public void openHelpers() throws IOException, URISyntaxException {
+        Paths paths = new Paths();
+        Desktop desktop = Desktop.getDesktop();
+        desktop.browse(new URI(paths.chatGPTURL));
+        System.out.println("ChatGPT opened");
+        desktop.browse(new URI(paths.ghURL));
+        System.out.println("GitHub opened");
+        desktop.browse(new URI(paths.ytURL));
+        System.out.println("YouTube opened");
+    }
 }
+
