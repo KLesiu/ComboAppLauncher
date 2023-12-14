@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import static java.awt.SystemColor.desktop;
 
 public class Code {
     final private String app;

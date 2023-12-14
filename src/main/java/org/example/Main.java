@@ -18,6 +18,9 @@ public class Main {
         else if(Objects.equals(choice,"chill")){
             launcher.startChill();
         }
+        else if(Objects.equals(choice,"play")){
+            launcher.startPlay();
+        }
         scanner.close();
     }
 

@@ -18,7 +18,15 @@ public class Launcher {
         System.out.println("Have fun!");
         Chill chill = new Chill();
         chill.openWebsites();
-
+    }
+    public void startPlay() throws IOException, URISyntaxException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What do you want to play? (LOL,CS,RL");
+        String appName = scanner.nextLine();
+        Play play = new Play(appName);
+        play.openApp();
+        play.openHelpers();
+        scanner.close();
     }
 
 }
