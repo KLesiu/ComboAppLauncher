@@ -24,9 +24,16 @@ public class Launcher {
         System.out.println("What do you want to play? (LOL,CS,RL");
         String appName = scanner.nextLine();
         Play play = new Play(appName);
+        System.out.println("Have fun BOSS!");
         play.openApp();
         play.openHelpers();
+
         scanner.close();
+    }
+    public void startStudy() throws IOException, URISyntaxException {
+        Study study = new Study();
+        study.openApp();
+        study.openWebsites();
     }
 
 }

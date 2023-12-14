@@ -12,6 +12,8 @@ public class Paths {
     public String csPath = "D:/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/bin/win64/cs2.exe";
     public String rlPath = "C:/Program Files/Epic Games/rocketleague/Binaries/Win64/RocketLeague.exe";
     public String dcPath = "C:/Users/kubax/AppData/Local/Discord/app-1.0.9027/Discord.exe";
-
+    public String outLURL= "https://outlook.office.com/mail/";
+    public String teamsURL = "https://teams.microsoft.com/";
+    public String planURL = "https://harmonogramy.dsw.edu.pl/Plany/PlanyTokow/895";
 
 }

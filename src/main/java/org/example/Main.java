@@ -21,6 +21,9 @@ public class Main {
         else if(Objects.equals(choice,"play")){
             launcher.startPlay();
         }
+        else if(Objects.equals(choice,"study")){
+            launcher.startStudy();
+        }
         scanner.close();
     }
 
