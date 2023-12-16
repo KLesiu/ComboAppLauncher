@@ -37,6 +37,7 @@ public class Play {
                 }
             }
 
+
         }
     }
     public void openHelpers() throws IOException, URISyntaxException {
@@ -44,10 +45,6 @@ public class Play {
         Desktop desktop = Desktop.getDesktop();
         desktop.browse(new URI(paths.ytURL));
         System.out.println("YouTube opened");
-        File dcExecutable = new File(paths.dcPath);
-        if(dcExecutable.exists()&& dcExecutable.canExecute()){
-            desktop.open(dcExecutable);
-            System.out.println("Discord running");
-        }
+
     }
 }
